@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: #ccdddd;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -28,6 +28,9 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  background: $white;
+  border-left: 1px solid #111144;
+  border-right: 1px solid #111144;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -272,10 +275,8 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
