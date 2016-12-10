@@ -78,15 +78,19 @@ cygcheck: track_down: could not find cygcrypt-0.dll
 ```
 
 Found that I had to do
+
 ```
 pact remove libcrypt0 crypt
 ```
+
 and then
+
 ```
 pact install crypt
 ```
 
 Finally I ran
+
 ```
 { ~ }  » cygcheck.exe /bin/perl
 C:\Development\.babun\cygwin\bin\perl.exe
