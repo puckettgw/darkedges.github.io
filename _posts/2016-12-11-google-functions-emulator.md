@@ -5,31 +5,41 @@ date: 2016-12-11T20:48:53+00:00
 author: admin
 layout: post
 guid: http://www.darkedges.com/blog/?p=30
-permalink: /2016/12/11/2016-12-1-google-functions-emulator/
+permalink: /2016/12/11/2016-12-11-google-functions-emulator/
 categories:
   - Google Cloud
 tags:
   - Functions
 ---
 
+Wanting to learn Google Cloud Functions and not waste time uploading and publishing
+I tried the Google Cloud Functions Emulator within my Windows environment. Here is my
+write up of how I deployed my first HTTP Function locally.
+
+<!-- more -->
+
 ## Pre-Requisites
+
 You need [Node.js 6.9.1](https://nodejs.org/dist/v6.9.1/node-v6.9.1-x64.msi), otherwise you will get the following error
 `Node.js v6.9.1 is required to run the emulator!`
 Anything later and it will not work.
 
 ## Install 'functions'
+
 Open a command prompt and start the emulator installation
 
     npm install -g @google-cloud/functions-emulator
 
 
-## Authenticate 
+## Authenticate
+
 *Note:* only if you need to access Google Services do you need to do this.
 You need to have a valid Google Tokens configured locally, and they will be the same as he one used when deployed.
 
 [Follow the instructions here](https://github.com/GoogleCloudPlatform/cloud-functions-emulator/blob/master/README.md#authentication)
 
-## HTTP Hello World 
+## HTTP Hello World
+
 Lets start by creating a simple HTTP example HelloWorld by creating a `functions` directory and adding and `index.js`
 file containing the folowing.
 
@@ -91,5 +101,6 @@ The output should be
     Hello Test!
 
 ## Conclusion
+
 That was a simple walkthrough of getting the Google Cloud Functions Emulator running a simple HTTP Function. You can
 use it for other Functions testing as well and for further details checkout [cloud-functions-emulator](https://github.com/GoogleCloudPlatform/cloud-functions-emulator)
