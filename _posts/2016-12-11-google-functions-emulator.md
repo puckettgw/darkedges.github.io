@@ -1,11 +1,11 @@
 ---
 id: 30
-title: Google Functions Emulator
-date: 2016-12-11T20:48:53+00:00
+title: 'Google Functions Emulator'
+date: 2016-12-11T08:00:00+00:00
 author: admin
 layout: post
 guid: http://www.darkedges.com/blog/?p=30
-permalink: /2016/12/11/2016-12-11-google-functions-emulator/
+permalink: /2016/12/11/google-functions-emulator/
 categories:
   - Google Cloud
 tags:
@@ -43,17 +43,7 @@ You need to have a valid Google Tokens configured locally, and they will be the 
 Lets start by creating a simple HTTP example HelloWorld by creating a `functions` directory and adding and `index.js`
 file containing the folowing.
 
-```
-/**
- * HTTP Cloud Function.
- *
- * @param {Object} req Cloud Function request context.
- * @param {Object} res Cloud Function response context.
- */
-exports.helloWorldHttp = function helloWorldHttp (req, res) {
-  res.send(`Hello ${req.body.name || 'World'}!`);
-};
-```
+{% gist darkedges/2ec023067cd23e5a028a4afdcff093b0 index.js %}
 
 First lets start the emualtor
 
@@ -61,7 +51,7 @@ First lets start the emualtor
 
 Should return similair to
 
-```
+```bash
 Starting Google Cloud Functions Emulator...
 Google Cloud Functions Emulator STARTED
 ┌───────────────┬────────────┬────────────────────────────────────────────────────┐
@@ -77,7 +67,7 @@ Next deploy to the emulator using the following command
 
 Should return similair to
 
-```
+```bash
 Function helloWorldHttp deployed.
 ┌──────────┬──────────────────────────────────────────────────────────────────────┐
 │ Property │ Value                                                                │

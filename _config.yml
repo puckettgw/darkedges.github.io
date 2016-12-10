@@ -9,6 +9,10 @@ github_username:  DarkEdges
 
 google_analytics: UA-330453-2
 
+highlighter: rouge
+
+future: true
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -19,4 +23,5 @@ paginate: 10
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-gist
 
