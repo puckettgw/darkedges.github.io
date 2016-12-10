@@ -3,7 +3,7 @@ title: DarkEdges
 email: info@darkedges.com
 description: "Identity and Access Management"
 baseurl: ""
-url: "https://lauris.github.io"
+url: "https://blog.darkedges.com"
 twitter_username: DarkEdges
 github_username:  DarkEdges
 
@@ -14,7 +14,7 @@ markdown: kramdown
 permalink: pretty
 excerpt_separator: "<!-- more -->"
 
-paginate: 5
+paginate: 10
 
 gems:
   - jekyll-sitemap
