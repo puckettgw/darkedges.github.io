@@ -11,6 +11,7 @@ categories:
   - Provisioning
 ---
 I have had a working Windows Vagrant / Ansible environment for a while, and now have decided to document the process (see xxxx). First though I am documenting the gotchas I have found.
+<!-- more --> 
 <h2>Gotcha 1 - Spaces in Directory Path</h2>
 When using Ansible on a a <a href="http://www.cygwin.com">Cygwin</a> / <a href="http://babun.github.io/">Babun</a> shell, make sure that the users home directory does not contain any spaces. i.e <strong><span style="font-family: 'courier new', courier, monospace;">/home/NIrving Development</span></strong> , as this causes some issues. The first issue is the following
 

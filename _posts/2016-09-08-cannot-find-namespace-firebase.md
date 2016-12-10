@@ -12,6 +12,9 @@ categories:
 ---
 I was having this issue after trying to follow the instructions at <a href="https://github.com/angular/angularfire2/blob/master/docs/1-install-and-setup.md">https://github.com/angular/angularfire2/blob/master/docs/1-install-and-setup.md</a>
 <pre>cannot find namespace 'firebase'</pre>
+
+<!-- more --> 
+
 After reading <a href="http://stackoverflow.com/questions/39118836/angularfire2-cannot-find-namespace-firebase">http://stackoverflow.com/questions/39118836/angularfire2-cannot-find-namespace-firebase</a> I added
 
 [code]

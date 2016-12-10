@@ -10,6 +10,9 @@ categories:
   - ThymeLeaf
 ---
 Using ThymeLeaf on WebLogic 10.3.5 I was getting the following warning message.
+
+<!-- more --> 
+
 [code lang="java"]
 WARN : org.thymeleaf.templateparser.xmlsax.XhtmlAndHtml5NonValidatingSAXTemplateParser - [THYMELEAF] The SAX Parser implementation being used (&quot;weblogic.xml.jaxp.RegistrySAXParser&quot;) does not implement the &quot;reset&quot; operation. This will force Thymeleaf to re-create parser instances each time they are needed for parsing templates, which is more costly. Enabling template cache is recommended, and also using a parser library which implements &quot;reset&quot; such as xerces version 2.9.1 or newer.
 [/code]

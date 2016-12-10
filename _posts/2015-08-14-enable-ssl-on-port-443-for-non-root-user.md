@@ -19,6 +19,8 @@ Group install
 EOF
 [/code]
 
+<!-- more --> 
+
 &nbsp;
 
 As the Root user

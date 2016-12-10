@@ -12,6 +12,8 @@ categories:
 ---
 After finally building my OAM 11.1.2.3.0 environment, I was playing with configuring a DCC with a custom Look and Feel. I thought I would have a look at the excellent article <a href="http://www.ateam-oracle.com/part-2-custom-login-and-logout-with-detached-credential-collector-dcc/">http://www.ateam-oracle.com/part-2-custom-login-and-logout-with-detached-credential-collector-dcc/</a> to give me a kick start to getting the ball rolling.
 
+<!-- more --> 
+
 In there the following code is present
 
 [code lang="java"]

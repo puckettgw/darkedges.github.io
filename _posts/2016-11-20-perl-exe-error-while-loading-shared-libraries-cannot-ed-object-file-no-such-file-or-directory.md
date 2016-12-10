@@ -11,6 +11,8 @@ categories:
 ---
 I was experiencing the following when I installed ruby via `pact install ruby`
 
+<!-- more --> 
+
 ```
 { ~ }  » perl -v
 C:/Development/.babun/cygwin/bin/perl.exe: error while loading shared libraries: ?: cannot ed object file: No such file or directory

@@ -11,6 +11,7 @@ categories:
   - Packer
 ---
 I am using Packer to build some Google Computer Images for a new project and I came undone a number of times whilst setting up my Packer file.
+<!-- more --> 
 
 The first issue I hit was this
 ```

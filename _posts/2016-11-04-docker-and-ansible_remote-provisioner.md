@@ -12,6 +12,7 @@ categories:
 ---
 Whilst configuring Packer for builder a `Docker` image using an `ansible_remote` Provisioner I was getting the following.
 
+<!-- more --> 
 ```bash
 ==> docker: SSH proxy: serving on 127.0.0.1:45113
     docker:  [WARNING]: Optional dependency 'cryptography' raised an exception, falling

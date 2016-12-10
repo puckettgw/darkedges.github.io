@@ -12,6 +12,8 @@ categories:
 ---
 Whilst learning <a href="https://apex.run/">Apex</a> I found an interesting issue getting the AWS API Gateway integration working.
 
+<!-- more --> 
+
 Following the instructions the order of play is
 <ol>
  	<li>

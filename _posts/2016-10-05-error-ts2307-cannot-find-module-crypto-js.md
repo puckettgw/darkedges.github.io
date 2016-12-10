@@ -10,21 +10,27 @@ categories:
   - Angular
 ---
 I am using `cryptojs` to develop a Android TOTP generator for Ionic and as all good projects started with
+
+<!-- more --> 
+
 ```
 npm install crypto-js --save
 ```
 
 When I started the `tsc` process I was getting the following error
+
 ```
 src/totp.component.ts(4,27): error TS2307: Cannot find module 'crypto-js'.
 ```
 
 I used the following command to resolve that issue
+
 ```
 typings install dt~crypto-js --global --save
 ```
 
 I tried
+
 ```
 npm install --save-dev @types/crypto-js
 ```

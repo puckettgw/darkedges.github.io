@@ -13,6 +13,8 @@ tags:
 ---
 I was receiving the following error when using `minikube start`
 
+<!-- more --> 
+
 ```bash
 Starting local Kubernetes cluster...
 E1106 07:39:29.894515    4616 start.go:92] Error starting host: Error creating new host: Driver "virtualbox" not found. Do you have the plugin binary accessible in your PATH?. Retrying.

@@ -12,6 +12,8 @@ categories:
 ---
 When enabling the Password Policy Validation Module I was receiving the following.
 
+<!-- more --> 
+
 [code]
 
 &lt;03/07/2015 7:32:40 AM AEST&gt; &lt;Error&gt; &lt;oracle.oam.user.identity.provider&gt; &lt;OAMSSA-20092&gt; 

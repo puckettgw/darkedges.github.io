@@ -18,6 +18,8 @@ keytool -import -alias Root -keystore wildcard.darkedges.vm.jks -trustcacerts -f
 keytool -import -alias Intermediate -keystore wildcard.darkedges.vm.jks -trustcacerts -file /etc/pki/CA/intermediate/certs/intermediate.cert.pem keytool -list -keystore wildcard.darkedges.vm.jks &lt;/span&gt;&lt;/p&gt;
 [/code]
 
+<!-- more --> 
+
 As the oracle user
 
 [code]

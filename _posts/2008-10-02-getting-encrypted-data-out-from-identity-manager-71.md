@@ -16,6 +16,8 @@ tags:
 ---
 Was working with a client wanting to do bulk imports with Sun Identity Manager 7.1 Service Provider Edition. They wanted to speed up User Provisioning by creating an LDIF to import direct into their Directory Instance, and not use the SPML interface and could not figure out how to encrypt the secret answers so that Identity Manager could decrypt them.
 
+<!-- more --> 
+
 It seemed a good challenge and would through in some learning to boot, so I decided to try and reverse engineer the code. JAD helped a lot there, and soon enough I discovered the secrets to how the Encryption mechanism worked and quickly discovered that I would need to create a copy of a known class, and get 2 XML objects from the data store.
 
 The class in question was <code>com.waveset.security.authn.ServerKeyStore</code>and the 2 XML objects needed where

@@ -12,6 +12,9 @@ tags:
   - CoreOS
 ---
 Installing CoreOS on your own hardware is quite simple when you know what you are doing. Here are the steps I used to install CoreOS on an old PC Chasis I had laying around.
+
+<!-- more --> 
+
 <ol>
 	<li>Download the latest CoreOS ISO.
 First you need to choose the Channel you want to use from <a href="https://coreos.com/docs/running-coreos/platforms/iso/">https://coreos.com/docs/running-coreos/platforms/iso/</a></li>

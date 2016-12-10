@@ -16,6 +16,8 @@ tags:
 ---
 This morning I was updating a WebGate to use SERVER_NAME as Preferred Host when I started to find this error message appearing in the Access Manager logs.
 
+<!-- more --> 
+
 ```
 <Apr 13, 2013 10:19:26 AM EST> <Warning> <oracle.oam.controller> <OAM-02073> <Error while checking if the resource is protected or not.>
 <Apr 13, 2013 10:19:26 AM EST> <Error> <oracle.oam.proxy.oam> <OAM-04029> <Error in generating AMEvent. Details Event Response status is STATUS_FAIL for GET_AUTHN_SCHEME event. Error code OAM-02073 status fail isExcluded false>

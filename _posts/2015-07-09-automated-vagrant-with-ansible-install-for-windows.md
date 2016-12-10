@@ -15,6 +15,7 @@ categories:
   - Virtualization
 ---
 At <a href="https://github.com/darkedges/WinVagInsAns">https://github.com/darkedges/WinVagInsAns</a> is a Powershell script for Windows that installs <a href="http://babun.github.io/">Babun</a>, <a href="https://www.vagrantup.com/">Vagrant</a>, <a href="https://www.virtualbox.org/">VirtualBox</a> and <a href="http://www.ansible.com/">Ansible</a>. It does all the configuration so that you don't have to and once completed will give you a fully working Ansible Provisioner in Vagrant.
+<!-- more --> 
 <h2><a id="user-content-installation" class="anchor" href="https://github.com/darkedges/WinVagInsAns#installation"></a>Installation</h2>
 This has been tested on Windows 7 Default Powershell V2. Other versions of OS / Powershell may have issues. It requires an environmental WINVAGINSANS to be set for where the software is to be installed. <strong>Note: This is for a clean install only. Existing installations will not work.</strong>
 

@@ -1,0 +1,36 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    {% if page.custom_title %}
+        {{ page.custom_title }}
+    {% else %}
+        {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+    {% endif %}
+    </title>
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{% if page.excerpt %}{% if page.content contains '<!-- more -->' %}{{ page.excerpt|strip_html|trim }}{% endif %}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- twitter meta -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@darkedges" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{% if page.content contains '<!-- more -->' %}{{ page.excerpt|strip_html|trim }}{% endif %}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    {% if page.image %}<meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}{{ page.image }}" />{% endif %}
+
+    <!-- google -->
+    <link rel="author" href="https://plus.google.com/+DarkEdges/posts"/>
+    <link rel="publisher" href="https://plus.google.com/+DarkEdges"/>
+    {% if page.image %}<meta name="thumbnail" content="{{ site.baseurl | prepend: site.url }}{{ page.image }}" />{% endif %}
+    
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" href="/images/logo.jpg">
+
+    <!-- Custom CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/lambda.css" | prepend: site.baseurl }}?v2.1">
+</head>

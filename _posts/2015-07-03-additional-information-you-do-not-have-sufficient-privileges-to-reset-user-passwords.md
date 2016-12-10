@@ -11,6 +11,8 @@ categories:
 ---
 When trying to modify a users password via OUD I was encountering the following error
 
+<!-- more --> 
+
 [code lang="bash"]
 
 /u01/app/oracle/fmw/asinst_1/OUD/bin/ldapmodify -h localhost -p 1389 -Duid=oamLDAP,cn=systemids,dc=example,dc=com -w xxxxxx-f /tmp/weblogic.ldif

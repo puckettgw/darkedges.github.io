@@ -10,6 +10,7 @@ categories:
   - Ionic 2
 ---
 This post is inspired by <a href="http://www.joshmorony.com/ionic-2-how-to-create-a-sliding-delete-button-for-lists/">http://www.joshmorony.com/ionic-2-how-to-create-a-sliding-delete-button-for-lists/</a> and updates the code for the latest version of Ionic.
+<!-- more --> 
 
 # Pre-Requisite
 Ensure that you have the latest version of Ionic by issuing the following command

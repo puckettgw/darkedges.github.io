@@ -11,6 +11,8 @@ categories:
 ---
 Slack has nice Web API Methods (<a href="https://api.slack.com/methods">https://api.slack.com/methods</a>) that can be used to get data about your team via a Token. I wanted to use the users.list method (<a href="https://api.slack.com/methods/users.list">https://api.slack.com/methods/users.list</a>) to get the Total # of Users as well as the currently Active #.
 
+<!-- more --> 
+
 First I got my Web Token from <a href="https://api.slack.com/docs/oauth-test-tokens">https://api.slack.com/docs/oauth-test-tokens</a> using an Admin account I had created.
 <span style="text-decoration: underline;"><strong>Note:</strong></span> Normally you would create an App and generate OAuth2 Access Tokens to get this done, but this is juts a quick and dirty implementation of how to get the date
 <h2>Download JQ</h2>

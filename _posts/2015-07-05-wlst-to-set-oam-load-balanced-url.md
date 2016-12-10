@@ -11,6 +11,8 @@ categories:
 ---
 Found this snippet @ <a href="https://community.oracle.com/thread/3744036">https://community.oracle.com/thread/3744036</a>
 
+<!-- more --> 
+
 [code lang="python"]
 domainRuntime()
 name = ObjectName(&quot;oracle.oam&quot;, &quot;type&quot;, &quot;Config&quot;);

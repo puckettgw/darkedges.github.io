@@ -11,16 +11,21 @@ categories:
   - typings
 ---
 I was getting the following when running `typings install`
+
+<!-- more --> 
+
 ```
 typings WARN deprecated 9/29/2016: "registry:dt/node#6.0.0+20160621231320" is deprecated (updated, replaced or removed)
 ```
 
 It would appear that I can find the correct version by issuing the following command
+
 ```
 typings info dt~node --versions
 ```
 
 This gives a list of versions as follows
+
 ```
 TAG                    VERSION DESCRIPTION COMPILER LOCATION
                                                                          UPDATED

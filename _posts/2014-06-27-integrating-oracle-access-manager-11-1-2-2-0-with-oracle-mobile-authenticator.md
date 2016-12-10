@@ -13,6 +13,8 @@ categories:
   - Oracle Access Manager
 ---
 The following assumes a vanilla install of Oracle Access Manager 11.1.2.2.0, with all the default port values. No further customization has been made. The Admin Server is to be the only service running during the configuration, otherwise the changes being made will occur in real time and you will be locked out of the OAM Console.
+<!-- more --> 
+
 <h1>Configure Oracle Access Manager</h1>
 <h2>Enable the Mobile and Social Service</h2>
 <ol>
