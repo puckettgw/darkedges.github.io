@@ -143,12 +143,24 @@ You should now be able to connect to the OpenDJ instance using
 | username | `cn=Directory Manager` |
 | password | `password` |
 
+## Removing Pod
+
+To remove what was deployed issue
+
+``` bash
+helm list                               /development/github/darkedges.github.io
+NAME                    REVISION        UPDATED                         STATUS          CHART
+exhaling-chicken        1               Fri Dec 23 10:31:05 2016        DEPLOYED        opendj-0.1.0
+
+helm delete exhaling-chicken 
+```
+
 ## Conclusion
 
 There appears to be some issues with the deployment that needs to be resolved.
 
-1. The `SNAPSHOT` repository is no longer available from ForgeRock
-2. There appears to be some issues with permissioning with Windows.
-3. The example is configured to use port forwarding instead of a `service`
+* The `SNAPSHOT` repository is no longer available from ForgeRock
+* There appears to be some issues with permissioning with Windows.
+* The example is configured to use port forwarding instead of a `service`
 
 All of these can be easily fixed though.
