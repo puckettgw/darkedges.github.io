@@ -104,6 +104,28 @@ cd fretes/helm
 helm install  --name userstore opendj --set djInstance=userstore
 ```
 
+## View deployment within Kubernetes Dashboard
+
+Fire up the dashboard with
+
+``` bash
+minikube dashboard
+```
+
+Expand `Pods` and you should see `configstore-0`. Select it and view the logs.
+
+The command to do  the same via `kubectl` is 
+
+```bash
+kubectl get pods
+```
+
+To view the logs
+
+``` bash
+kubectl log configstore-0
+```
+
 ## Enable Forwarding
 
 To be able to interact we can use the `kubectl port-forward` command with the correct details
