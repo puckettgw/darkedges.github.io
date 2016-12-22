@@ -28,3 +28,10 @@ The following commands resolves that issue. Just remember to add it to the Envir
 curl -o /c/development/cacert.pem https://curl.haxx.se/ca/cacert.pem
 export SSL_CERT_FILE="c:\development\cacert.pem"
 ```
+
+__**Note:**__ to solve permanently for all services open a PowerShell as an `Administrator` and issue
+Then use the following to add it to the Environment Variables
+
+```PowerShell
+[Environment]::SetEnvironmentVariable("SSL_CERT_FILE", "c:\development\cacert.pem", "Machine")
+```
