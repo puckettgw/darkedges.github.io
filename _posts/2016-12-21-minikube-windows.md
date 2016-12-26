@@ -18,6 +18,62 @@ disable Hyper-V.
 
 <!-- more -->
 
+## Install PowerShell Updates
+
+Download and install `.NET Framework 4.6.1` ala `NDP461-KB3102436-x86-x64-AllOS-ENU.exe` from (https://www.microsoft.com/en-au/download/details.aspx?id=53344)[https://www.microsoft.com/en-au/download/details.aspx?id=53344]
+
+download `Windows Management Framework 5.0` ala `Win7AndW2K8R2-KB3134760-x64.msu` from (https://www.microsoft.com/en-us/download/details.aspx?id=50395)[https://www.microsoft.com/en-us/download/details.aspx?id=50395]
+
+Execute the following
+
+```PowerShell
+.\NDP462-KB3151800-x86-x64-AllOS-ENU.exe
+wusa.exe Win7AndW2K8R2-KB3134760-x64.msu /norestart
+```
+
+When completed restart PowerShell as an `Administrator` and issue
+
+```PowerShell
+$PSVersionTable.PSVersion
+Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' -recurse |
+Get-ItemProperty -name Version,Release -EA 0 |
+Where { $_.PSChildName -match '^(?!S)\p{L}'} |
+Select PSChildName, Version, Release, @{
+  name="Product"
+  expression={
+      switch -regex ($_.Release) {
+        "378389" { [Version]"4.5" }
+        "378675|378758" { [Version]"4.5.1" }
+        "379893" { [Version]"4.5.2" }
+        "393295|393297" { [Version]"4.6" }
+        "394254|394271" { [Version]"4.6.1" }
+        "394802|394806" { [Version]"4.6.2" }
+        {$_ -gt 394806} { [Version]"Undocumented 4.6.2 or higher, please update script" }
+      }
+    }
+}
+```
+
+Should return
+
+```PowerShell
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      0      10586  117
+
+PSChildName                      Version        Release Product
+-----------                      -------        ------- -------
+v2.0.50727                       2.0.50727.5420
+v3.0                             3.0.30729.5420
+Windows Communication Foundation 3.0.4506.5420
+Windows Presentation Foundation  3.0.6920.5011
+v3.5                             3.5.30729.5420
+Client                           4.6.01590      394806  4.6.2
+Full                             4.6.01590      394806  4.6.2
+Client                           4.0.0.0
+
+```
+
 ## Install Chocolatey
 
 Open a PowerShell window as an Administrator and issue the following command
