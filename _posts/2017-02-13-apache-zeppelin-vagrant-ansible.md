@@ -12,7 +12,7 @@ categories:
 
 ---
 
-Wanting to review [https://zeppelin.apache.org/](Apache Zeppelin), a web based notebook that enables data analytics, for some projects I found this article [http://arjon.es/2015/08/23/vagrant-spark-zeppelin-a-toolbox-to-the-data-analyst/](http://arjon.es/2015/08/23/vagrant-spark-zeppelin-a-toolbox-to-the-data-analyst/).
+Wanting to review [Apache Zeppelin](https://zeppelin.apache.org/), a web based notebook that enables data analytics, for some projects I found this article [http://arjon.es/2015/08/23/vagrant-spark-zeppelin-a-toolbox-to-the-data-analyst/](http://arjon.es/2015/08/23/vagrant-spark-zeppelin-a-toolbox-to-the-data-analyst/).
 I tried to get that example up and running and it failed, so I thought I would update it and make
 it available at [https://github.com/darkedges/vagrant-zeppelin](https://github.com/darkedges/vagrant-zeppelin)
 
