@@ -1,6 +1,5 @@
-
 ---
-id: 34
+id: 35
 title: "'default backend - 404' when using minikube and TLS for ingress"
 date: 2018-07-22T08:00:00+00:00
 author: admin
@@ -14,6 +13,8 @@ categories:
 ---
 
 I was having an issue getting my minikube ingress controller working, as it was returning a `default backend - 404` when I hit the `https://` URL. Turns out a configuration that was working with nginx, does not necessarily work with ingress-nginx
+
+<!-- more -->
 
 At first I found this [https://github.com/kubernetes/minikube/issues/1701](https://github.com/kubernetes/minikube/issues/1701) and tried everything in there, but it still did not solve my problem.
 

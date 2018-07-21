@@ -16,6 +16,8 @@ Last night I started to get the following error in my project
 Can't construct a query for the property "formHost" of "ParentDynamicFormComponent"
 ```
 
+<!-- more -->
+
 All I had changed was in another module was adding my own Cutom HTTP Client, so I went back to it and put it back and it started working again. That is when I started going down the rabbithole to determine what I had done.
 
 Turns out it was a Circular dependency in another class that 
