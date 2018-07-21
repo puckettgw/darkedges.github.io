@@ -7,8 +7,7 @@ layout: post
 guid: http://www.darkedges.com/blog/?p=35
 permalink: /2018/07/22/default-backend-404/
 categories:
-
-- minikube
+  - minikube
   
 ---
 
