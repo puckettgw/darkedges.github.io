@@ -1,6 +1,6 @@
 ---
 id: 34
-title: "Can't construct a query for the property "formHost" of "ParentDynamicFormComponent""
+title: "Can't construct a query for the property \"formHost\" of \"ParentDynamicFormComponent\""
 date: 2018-06-23T08:00:00+00:00
 author: admin
 layout: post
