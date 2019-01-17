@@ -125,7 +125,6 @@ The basic premise is that the following applications are deployed
 
 `productpage` or `details` should not be able to access `ratings` directly.
 
-
 ## Configure Application Ingress
 
 ```bash
@@ -144,7 +143,7 @@ spec:
 EOF
 ```
 
-## Configuire via Istio Policy
+## Configure via Istio Policy
 
 the following istio `NetworkPolicy`
 
