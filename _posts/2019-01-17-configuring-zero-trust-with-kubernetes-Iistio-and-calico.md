@@ -1,6 +1,6 @@
 ---
 id: 38
-title: "Configuring Zero Trust with Kubernetes, Istio and Calico"
+title: "Configuring Zero Trust Networking with Kubernetes, Istio and Calico"
 date: 2019-01-17T16:00:00+00:00
 author: admin
 layout: post
