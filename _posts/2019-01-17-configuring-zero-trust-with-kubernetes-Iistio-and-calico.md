@@ -125,6 +125,8 @@ The basic premise is that the following applications are deployed
 
 `productpage` or `details` should not be able to access `ratings` directly.
 
+If you login as `jason` you will see a different rating mechanism being presented, which is part of Istios Intelligient routing capaibility.
+
 ## Configure Application Ingress
 
 ```bash
