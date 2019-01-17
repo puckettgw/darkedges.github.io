@@ -113,7 +113,20 @@ kubectl apply -f ${ISTIO_DIR}/samples/bookinfo/networking/virtual-service-review
 
 ## Configure Zero Trust
 
-### Configure Application Ingress
+The basic premise is that the following applications are deployed
+
+- `productpage`
+- `details`
+- `reviews`
+- `ratings`
+
+`reviews` needs access to `ratings`
+`productpage` needs access to `details` and `reviews`
+
+`productpage` or `details` should not be able to access `ratings` directly.
+
+
+## Configure Application Ingress
 
 ```bash
 kubectl create -n policy-demo -f https://docs.projectcalico.org/v3.4/getting-started/kubernetes/tutorials/stars-policy/policies/default-deny.yaml
@@ -131,7 +144,7 @@ spec:
 EOF
 ```
 
-### Configuire via Istio Policy
+## Configuire via Istio Policy
 
 the following istio `NetworkPolicy`
 
