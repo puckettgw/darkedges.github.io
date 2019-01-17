@@ -19,7 +19,7 @@ Taken the various guides for deploying Calico and Istio on Kubernetes to generat
 
 # Zero Trust Networking with Kuberenets, Istio and Calico
 
-This has been honed over a couple of days as I found some of the tutorials a little hard to get working. This should use my CoreOS Single Cluster guide as a foundation as it has been updated to support the nuances of that platform.
+This has been honed over a couple of days as I found some of the tutorials a little hard to get working. This should use my [CoreOS Single Node Cluster](/2019/01/17/configuring-kubernets-single-node-cluster-with-coreos/) guide as a foundation as it has been updated to support the nuances of that platform.
 
 ## Installing Calico for policy and flannel for networking
 
