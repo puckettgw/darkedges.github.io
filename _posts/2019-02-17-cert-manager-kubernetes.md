@@ -1,10 +1,10 @@
 ---
-id: 38
+id: 39
 title: "Installing cert-manager on Kubenetes with CloudFlare DNS"
 date: 2019-02-17T16:00:00+00:00
 author: admin
 layout: post
-guid: http://www.darkedges.com/blog/?p=40
+guid: http://www.darkedges.com/blog/?p=39
 permalink: /2019/02/17/cert-manager-kubernetes-cloudflare-dns/
 categories:
   - coreos
@@ -90,7 +90,7 @@ You can confirm it configure correctly via the following
 2. Issue the following to generate your CloudFlare API Key Secret
 
     ```bash
-    API_KEY=$(echo f484d703ec06de0e4816508903f4da83f91ab | base64 -)
+    API_KEY=$(echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | base64 -)
    cat <<EOF | kubectl apply -f -
    ---
    apiVersion: v1
@@ -107,7 +107,7 @@ You can confirm it configure correctly via the following
 3. Create the `ClusterIssuer` configuration
 
     ```bash
-    EMAIL_ADDRESS="nirving@darkedges.com"
+    EMAIL_ADDRESS="xxxx@xxxx.xxx"
     cat <<EOF | kubectl apply -f -
     ---
     apiVersion: certmanager.k8s.io/v1alpha1
@@ -134,7 +134,7 @@ You can confirm it configure correctly via the following
 4. Create the Test Certficate
 
    ```bash
-   DOMAIN_NAME="docker.internal.darkedges.com"
+   DOMAIN_NAME="xxxxx.xxxxx.xxx"
    cat <<EOF | kubectl apply -f -
    ---
    apiVersion: certmanager.k8s.io/v1alpha1
@@ -162,16 +162,16 @@ You can confirm it configure correctly via the following
 5. Confirm it has been created (may take a minute or 2 to generate) by issuing
 
    ```bash
-   kubectl describe certificate docker-internal-darkedges-com -n cert-manager
+   kubectl describe certificate $(echo $DOMAIN_NAME | tr . -) -n cert-manager
    ```
 
    should return similair to
 
    ```text
-    Name:         docker-internal-darkedges-com
+    Name:         xxxx-xxxx-xxx
     Namespace:    cert-manager
     Labels:       <none>
-    Annotations:  kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"certmanager.k8s.io/v1alpha1","kind":"Certificate","metadata":{"annotations":{},"name":"docker-internal-darkedges-com","namespace":"cert-...
+    Annotations:  kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"certmanager.k8s.io/v1alpha1","kind":"Certificate","metadata":{"annotations":{},"name":"xxxx-xxxx-xxx","namespace":"cert-...
     API Version:  certmanager.k8s.io/v1alpha1
     Kind:         Certificate
     Metadata:
@@ -179,7 +179,7 @@ You can confirm it configure correctly via the following
       Creation Timestamp:  2019-02-16T22:44:17Z
       Generation:          1
       Resource Version:    3053428
-       Self Link:           /apis/certmanager.k8s.io/v1alpha1/namespaces/cert-manager/certificates/docker-internal-darkedges-com
+       Self Link:           /apis/certmanager.k8s.io/v1alpha1/namespaces/cert-manager/certificates/xxxx-xxxx-xxx
       UID:                 649849bf-323c-11e9-9371-00237d495614
     Spec:
       Acme:
@@ -187,14 +187,14 @@ You can confirm it configure correctly via the following
         Dns 01:
             Provider:  cf-dns
         Domains:
-            docker.internal.darkedges.com
-      Common Name:  docker.internal.darkedges.com
+            xxxx.xxxx.xxx
+      Common Name:  xxxx.xxxx.xxx
       Dns Names:
-        docker.internal.darkedges.com
+        xxxx.xxxx.xxx
       Issuer Ref:
         Kind:       ClusterIssuer
         Name:       letsencrypt-staging
-      Secret Name:  docker-internal-darkedges-com
+      Secret Name:  xxxx-xxxx-xxx
     Status:
       Conditions:
         Last Transition Time:  2019-02-16T22:45:37Z
@@ -206,8 +206,8 @@ You can confirm it configure correctly via the following
     Events:
       Type     Reason         Age                From          Message
       ----     ------         ----               ----          -------
-      Normal   OrderCreated   43m                cert-manager  Created Order resource "docker-internal-darkedges-com-2862881673"
-      Normal   OrderComplete  42m                cert-manager  Order "docker-internal-darkedges-com-2862881673" completed successfully
+      Normal   OrderCreated   43m                cert-manager  Created Order resource "xxxx-xxxx-xxx-2862881673"
+      Normal   OrderComplete  42m                cert-manager  Order "xxxx-xxxx-xxx-2862881673" completed successfully
       Normal   CertIssued     42m                cert-manager  Certificate issued successfully
       Warning  BadConfig      10m (x2 over 10m)  cert-manager  Resource validation failed: spec: Invalid value: "no issuer specified for Issuer '/letsencrypt-staging'": no issuer specified for Issuer '/letsencrypt-staging'
 
