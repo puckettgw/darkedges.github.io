@@ -27,35 +27,35 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
 
 1. Connect to [https://trail.onetrust.com](https://trial.onetrust.com/)
 
-   ![1](../images/2019-02-24-11-10-19.small.png)
+   ![1](/images/2019-02-24-11-10-19.small.png)
 2. Enter your `Email` and click the `Continue` button.
 
-   ![1](../images/2019-02-24-11-12-43.small.png)
+   ![1](/images/2019-02-24-11-12-43.small.png)
 3. Enter your `Password` and click the `Login` button.
 
-   ![1](../images/2019-02-24-11-09-24.small.png)
+   ![1](/images/2019-02-24-11-09-24.small.png)
 4. Your should get your OneTrust Portal Page.
 
-   ![1](../images/2019-02-24-11-11-25.small.png)
+   ![1](/images/2019-02-24-11-11-25.small.png)
 
 ## Consent and Preference Management Tab
 
 1. From the Portal Page click the `Consent` Tab.
 
-    ![Consent Tab](../images/2019-02-23-10-05-45.small.png)
+    ![Consent Tab](/images/2019-02-23-10-05-45.small.png)
 2. You will be presented with your `Consent Dashboard` 
    **Note:** Mine already has some details collected, yours will be blank.
 
-   ![1](../images/2019-02-24-11-15-21.small.png)
+   ![1](/images/2019-02-24-11-15-21.small.png)
 
 ## Create a Topic
 
 1. Under `Setup` click `Topics`
 
-   ![Select Topics](../images/2019-02-23-10-13-30.small.png)
+   ![Select Topics](/images/2019-02-23-10-13-30.small.png)
 2. Click the `Add New` button.
 
-   ![Add New Topic](../images/2019-02-23-10-18-30.small.png)
+   ![Add New Topic](/images/2019-02-23-10-18-30.small.png)
 3. Enter the following
 
    | Topic Name | Default Language |
@@ -63,53 +63,53 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
    | Test Topic | English (U.S.)   |
    and click the `Add` button.
 
-   ![Add Purpose](../images/2019-02-23-10-20-50.small.png)
+   ![Add Purpose](/images/2019-02-23-10-20-50.small.png)
 4. Your Topic has been added
 
-   ![Tooic has been added](../images/2019-02-23-10-21-41.small.png)
+   ![Tooic has been added](/images/2019-02-23-10-21-41.small.png)
 
 ## Create a Purpose.
 
 1. Click the `Purposes` tab.
 
-   ![Click Purposes Tab](../images/2019-02-23-10-22-32.small.png)
+   ![Click Purposes Tab](/images/2019-02-23-10-22-32.small.png)
 2. Click the `Add New` button.
 
-   ![Add New Purpose](../images/2019-02-23-10-23-41.small.png)
+   ![Add New Purpose](/images/2019-02-23-10-23-41.small.png)
 3. Enter the following
    | Purpose Name | Description | Default Language |
    | ------------ | ----------- ||
    | Test Purpose | Test Purpose Description | English (U.S.)   |
    and click the `Create Purpose` button.
 
-   ![Create Purpose](../images/2019-02-23-10-26-08.small.png)
+   ![Create Purpose](/images/2019-02-23-10-26-08.small.png)
 
 4. Purpose has been created but it is in the `Draft` State.
 
-   ![Purpose in Draft](../images/2019-02-23-10-27-40.small.png)
+   ![Purpose in Draft](/images/2019-02-23-10-27-40.small.png)
 5. Click on `Test Purpose`
 
-    ![Click on Test Purpose](../images/2019-02-24-09-16-25.small.png)
+    ![Click on Test Purpose](/images/2019-02-24-09-16-25.small.png)
 
 6. Click on `Publish` and in the pop-ip click `Publish`
 
-    ![Publish Purpose](../images/2019-02-24-09-19-01.small.png)
+    ![Publish Purpose](/images/2019-02-24-09-19-01.small.png)
 7. The purpose has now been published and is `Active`
 
-   ![Purpose is Active](../images/2019-02-24-09-20-36.small.png)
+   ![Purpose is Active](/images/2019-02-24-09-20-36.small.png)
 
 ## Create a Collection Point
 
 1. Click on the `Collections Points` Tab
 
-   ![Collection Point](../images/2019-02-24-11-21-56.small.png)
+   ![Collection Point](/images/2019-02-24-11-21-56.small.png)
 2. Click on the `Add New` Button
 
-   ![Add New Button](../images/2019-02-24-09-30-47.small.png)
+   ![Add New Button](/images/2019-02-24-09-30-47.small.png)
 
 3. Click on the `Select` button within the `Web Form` panel
 
-   ![Select Web Form](../images/2019-02-24-09-32-00.small.png)
+   ![Select Web Form](/images/2019-02-24-09-32-00.small.png)
 4. Enter the following details
    **Overview**
    | Name                  | Description                       | Processing Purpose | Responsible User  |
@@ -122,36 +122,36 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
 
     and click the `Create Collection Point` button.
 
-    ![Create Collection Poin](../images/2019-02-24-09-41-03.small.png)
+    ![Create Collection Poin](/images/2019-02-24-09-41-03.small.png)
 
 5. The `Test Collection Point` has been created in a `Draft` state.
 
-   ![Test Collection Point is in Draft state](../images/2019-02-24-09-42-36.small.png)
+   ![Test Collection Point is in Draft state](/images/2019-02-24-09-42-36.small.png)
 
 6. Click on the  `Test Collection Point` link, 
    1. select the `Settings` Tab
    2. Select `Use Hosted SDK Settings`
 
-   ![Update Settings and Publish](../images/2019-02-24-09-47-00.small.png)
+   ![Update Settings and Publish](/images/2019-02-24-09-47-00.small.png)
    and click the `Publish` button.
 
 7. Click the `Publish` button in the pop-up
 
-   ![Publish Test Collection Point](../images/2019-02-24-09-49-18.small.png)
+   ![Publish Test Collection Point](/images/2019-02-24-09-49-18.small.png)
 
 8. The `Test Collection Point` has been published.
 
-   ![Test Collection Point published](../images/2019-02-24-09-50-39.small.png)
+   ![Test Collection Point published](/images/2019-02-24-09-50-39.small.png)
 
 ## Create a Preference Centers
 
 1. Select `Preference Centers` under the `Setup` tab
 
-   ![Select Preference Centers](../images/2019-02-24-09-53-34.small.png)
+   ![Select Preference Centers](/images/2019-02-24-09-53-34.small.png)
 
 2. Click the `Add New` button.
 
-   ![Click Add New Button](../images/2019-02-24-09-54-20.small.png)
+   ![Click Add New Button](/images/2019-02-24-09-54-20.small.png)
 3. Enter the following details
 
    | Name                   | Description                        |
@@ -160,25 +160,25 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
 
    and press the `Create` button.
 
-   ![Click the create button](../images/2019-02-24-09-56-28.small.png)
+   ![Click the create button](/images/2019-02-24-09-56-28.small.png)
 4. Click on `Test Preference Center`
 
-   ![Test Prefernce Center](../images/2019-02-24-10-06-07.small.png)
+   ![Test Prefernce Center](/images/2019-02-24-10-06-07.small.png)
 
 5. It is currently unpublished, but before we can publish we need to add the `Test Purpose` to it
 
-   ![1](../images/2019-02-24-10-07-33.small.png)
+   ![1](/images/2019-02-24-10-07-33.small.png)
 6. Drag `Test Purpose` to `Add Section or Purpose`
 
-   ![1](../images/2019-02-24-10-09-00.small.png)
+   ![1](/images/2019-02-24-10-09-00.small.png)
 7. It will know how the `Test Purpose` under `Welcome Message`
 
-   ![1](../images/2019-02-24-10-10-10.small.png)
+   ![1](/images/2019-02-24-10-10-10.small.png)
    Click the `Publish` button.
 
 8. In the pop-up click the `Publish` button
 
-   ![1](../images/2019-02-24-10-12-38.small.png)
+   ![1](/images/2019-02-24-10-12-38.small.png)
 
 ## Create a Web Form
 
@@ -203,14 +203,14 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
 ### Test Collection Point Settings URL
 
 1. Select `Collection Points` Tab, then `Test Collection Point` and click the `SDK` tab.
-   ![Collection Points](../images/2019-02-24-10-28-13.small.png)
+   ![Collection Points](/images/2019-02-24-10-28-13.small.png)
 2. The value needed is in the `settingsURL` javascript and it is `https://privacyportaltrial-cdn.onetrust.com/consentmanager-settings/b4050acc-4842-4bd6-80e5-109de90f8150/5198933f-b5d9-430f-9e30-6b8e87bee651-active.json`
 
 ### Test Preference Center URL
 
 1. Select `Preference Centers` tab and then `Test Preference Center`
 2. Click the `Integrations` Tab and the URL is presented
-   ![Integrations](../images/2019-02-24-10-18-33.small.png)
+   ![Integrations](/images/2019-02-24-10-18-33.small.png)
 3. The URL is `https://privacyportaltrial.onetrust.com/ui/#/preferences/login/a6ebdc09-48c6-41b8-9f9c-2d69b6a014eb`
 
 The details we need are
@@ -367,26 +367,26 @@ Here is the dettails for the `Test Purpose` and `Test Topic` we are collecting c
 ## Testing
 
 1. Open your URL [https://onetrustdemo.darkedges.com/test.html](https://onetrustdemo.darkedges.com/test.html)
-   ![](../images/2019-02-24-10-46-19.small.png) 
+   ![](/images/2019-02-24-10-46-19.small.png) 
 2. Fill out the details, remembering to use an active email address as you will need this to view your consent later and click the `Submit Form` button.
 3. Go to your Preference center [https://privacyportaltrial.onetrust.com/ui/#/preferences/login/a6ebdc09-48c6-41b8-9f9c-2d69b6a014eb](https://privacyportaltrial.onetrust.com/ui/#/preferences/login/a6ebdc09-48c6-41b8-9f9c-2d69b6a014eb) and enter in your email address and click the `Send` button.
 4. Once done, it will tell you to check your email.
-   ![](../images/2019-02-24-10-49-56.small.png)
+   ![](/images/2019-02-24-10-49-56.small.png)
 5. Once received click the `Login` button
-   ![](../images/2019-02-24-10-52-14.small.png)
+   ![](/images/2019-02-24-10-52-14.small.png)
 6. You will now be presented with your consent information
-   ![](../images/2019-02-24-10-53-37.small.png)
+   ![](/images/2019-02-24-10-53-37.small.png)
 
 ## View Report in Portal
 
 1. In the Portal click `Data Subjects` in the `Reporting` Tab.
-   ![](../images/2019-02-24-10-54-57.small.png)
+   ![](/images/2019-02-24-10-54-57.small.png)
 2. You will see your email address, so click the link
-   ![](../images/2019-02-24-10-55-34.small.png)
+   ![](/images/2019-02-24-10-55-34.small.png)
 3. You will be presented with details about the `Data Subject`
-   ![](../images/2019-02-24-10-56-19.small.png)
+   ![](/images/2019-02-24-10-56-19.small.png)
 4. Click the `Details` Button to view more details about the transaction
-   ![](../images/2019-02-24-10-59-08.small.png)
+   ![](/images/2019-02-24-10-59-08.small.png)
 
 ## Final
 

@@ -114,7 +114,7 @@ Looking at [Amster export failure](https://bugster.forgerock.org/jira/browse/OPE
 
 1. Find that there is an error within the Chrome Browser that stops the upgrade via the browser as I am not SSL.
 
-   ![Image failure](../images/2019-04-18-08-28-16.png)
+   ![Image failure](/images/2019-04-18-08-28-16.png)
 
    ```bash
    Uncaught TypeError: Cannot set property 'innerHTML' of null
