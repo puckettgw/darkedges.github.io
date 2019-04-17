@@ -21,7 +21,7 @@ Collecting Consent with [OneTrust](https://www.onetrust.com/) is easy with the O
 6. Create a Preference Center.s
 7. Create a Web Form
 
-<!--more -->
+<!-- more -->
 
 ## Login
 
