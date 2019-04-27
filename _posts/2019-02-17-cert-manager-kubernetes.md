@@ -87,79 +87,79 @@ You can confirm it configure correctly via the following
    - Click `View` next to `Global API Key`
    - Enter your details and pass the I am not a robot challenge and click `View`
 
-2. Issue the following to generate your CloudFlare API Key Secret
+1. Issue the following to generate your CloudFlare API Key Secret
 
-    ```bash
-    API_KEY=$(echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | base64 -)
-   cat <<EOF | kubectl apply -f -
-   ---
-   apiVersion: v1
-    kind: Secret
-    metadata:
-      name: cloudflare-api-key
-      namespace: cert-manager
-    type: Opaque
-    data:
-      api-key.txt: ${API_KEY}
-   EOF
-   ```
+```bash
+API_KEY=$(echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | base64 -)
+cat <<EOF | kubectl apply -f -
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cloudflare-api-key
+  namespace: cert-manager
+type: Opaque
+data:
+  api-key.txt: ${API_KEY}
+EOF
+```
 
-3. Create the `ClusterIssuer` configuration
+1. Create the `ClusterIssuer` configuration
 
-    ```bash
-    EMAIL_ADDRESS="xxxx@xxxx.xxx"
-    cat <<EOF | kubectl apply -f -
-    ---
-    apiVersion: certmanager.k8s.io/v1alpha1
-    kind: ClusterIssuer
-    metadata:
+```bash
+EMAIL_ADDRESS="xxxx@xxxx.xxx"
+cat <<EOF | kubectl apply -f -
+---
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-staging
+spec:
+  acme:
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    email: ${EMAIL_ADDRESS}
+    privateKeySecretRef:
       name: letsencrypt-staging
-    spec:
-      acme:
-        server: https://acme-staging-v02.api.letsencrypt.org/directory
-        email: ${EMAIL_ADDRESS}
-        privateKeySecretRef:
-          name: letsencrypt-staging
-        dns01:
-          providers:
-            - name: cf-dns
-              cloudflare:
-                email: ${EMAIL_ADDRESS}
-                apiKeySecretRef:
-                  name: cloudflare-api-key
-                  key: api-key.txt
-    EOF
-    ```
+    dns01:
+      providers:
+      - name: cf-dns
+        cloudflare:
+          email: ${EMAIL_ADDRESS}
+          apiKeySecretRef:
+            name: cloudflare-api-key
+            key: api-key.txt
+EOF
+```
 
-4. Create the Test Certficate
+1. Create the Test Certficate
 
-   ```bash
-   DOMAIN_NAME="xxxxx.xxxxx.xxx"
-   cat <<EOF | kubectl apply -f -
-   ---
-   apiVersion: certmanager.k8s.io/v1alpha1
-   kind: Certificate
-   metadata:
-     name: $(echo $DOMAIN_NAME | tr . -)
-     namespace: cert-manager
-   spec:
-     secretName: $(echo $DOMAIN_NAME | tr . -)
-     issuerRef:
-       name: letsencrypt-staging
-       kind: ClusterIssuer
-     commonName: '${DOMAIN_NAME}'
-     dnsNames:
-     - ${DOMAIN_NAME}
-     acme:
-       config:
-       - dns01:
-           provider: cf-dns
-         domains:
-           - ${DOMAIN_NAME}
-   EOF
-   ```
+```bash
+DOMAIN_NAME="xxxxx.xxxxx.xxx"
+cat <<EOF | kubectl apply -f -
+---
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: $(echo $DOMAIN_NAME | tr . -)
+  namespace: cert-manager
+spec:
+  secretName: $(echo $DOMAIN_NAME | tr . -)
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: '${DOMAIN_NAME}'
+  dnsNames:
+  - ${DOMAIN_NAME}
+  acme:
+    config:
+    - dns01:
+        provider: cf-dns
+      domains:
+        - ${DOMAIN_NAME}
+EOF
+```
 
-5. Confirm it has been created (may take a minute or 2 to generate) by issuing
+1. Confirm it has been created (may take a minute or 2 to generate) by issuing
 
    ```bash
    kubectl describe certificate $(echo $DOMAIN_NAME | tr . -) -n cert-manager
