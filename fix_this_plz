@@ -1,0 +1,5 @@
+https://blog.darkedges.com/2019/02/17/cert-manager-kubernetes-cloudflare-dns/
+^ These instructions are no longer valid. 
+It'd be nice if you either marked this as deprecated or actually updated it to reflect the current practices for creating cert-manager resources
+Otherwise, people are going to find your article, attempt to follow it, and then have to tear down their cluster when the various hanging resources created by the old cert-manager manifests don't disappear properly.
+I know, because I just had to do this on a brand-new k3s install.
